@@ -8,6 +8,7 @@ import {
 import Navigation from "./Navigation";
 import Home from "../../pages/Home";
 import Book from "../../pages/Book";
+import User from "../../pages/User";
 
 const Nav = () => {
   const router = createBrowserRouter(
@@ -15,6 +16,7 @@ const Nav = () => {
       <Route path="/" element={<Navigation />}>
         <Route path="home" element={<Home />} />
         <Route path="book" element={<Book />} />
+        <Route path="user" element={<User />} />
       </Route>
     )
   );
